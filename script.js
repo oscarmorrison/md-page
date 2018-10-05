@@ -1,5 +1,6 @@
 console.log('hello world')
 document.addEventListener("DOMContentLoaded", function() {
+    console.log('ready')
     document.body.style.padding = 20
     document.body.style.fontFamily = '"Helvetica Neue", Helvetica, Arial, sans-serif'
     var markdown = document.body.innerHTML
