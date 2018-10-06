@@ -1,4 +1,4 @@
-# simplest-site
+# markdown page
 
 **Create a webpage by just writing markdown, nothing else!**
 
