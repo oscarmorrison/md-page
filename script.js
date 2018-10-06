@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
             regex: /<a\shref.+">/g,
             replace : function (text) {
                 var url = text.match(/"(.*?)"/)[1]
-                if(url.includes(window.location.hostname) || url[0] == '/'){
+                if(url.includes(window.location.hostname) || url[0] == '/' || url[0] == '.'){
                     return text
                 }
                 return '<a href="' + url + '" target="_blank">'
