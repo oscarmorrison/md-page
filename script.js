@@ -15,13 +15,28 @@ document.addEventListener("DOMContentLoaded", function() {
 
     //handle github wrapping in pre
     var markdown = document.body.childElementCount == 1 ? document.body.firstElementChild.textContent : document.body.textContent;
-    console.log(markdown)
+
     var converter = new showdown.Converter({
-        openLinksInNewWindow: true,
         emoji: true,
         underline: true,
     })
     converter.setFlavor('github')
+
+    converter.addExtension(function () {
+        return [{
+            type: 'output',
+            regex: /<a\shref.+">/g,
+            replace : function (text) {
+                var url = text.match(/"(.*?)"/)[1]
+                if(url.includes(window.location.hostname)){
+                    return text
+                }
+                return '<a href="' + url + '" target="_blank">'
+            }
+        }]
+    }, 'externalLink')
+
+
     var html = converter.makeHtml(markdown);
     document.body.innerHTML = html
     document.title = document.title || document.body.firstElementChild.innerText.trim()
