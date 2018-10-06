@@ -27,7 +27,7 @@ Welcome to my simplest site
 
 
 ### Demo
-http://oscarmorrison.com/simplest-site/
+http://oscarmorrison.com/md-page/
 
 <img width="800" alt="sidebyside 2" src="https://user-images.githubusercontent.com/1651212/46540086-ac6d7080-c8fb-11e8-81fe-491898484d53.png">
 
