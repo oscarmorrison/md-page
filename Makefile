@@ -1,2 +1,2 @@
 concat:
-	uglifyjs -o md-page.js showdown.1.8.6.js script.js
+	uglifyjs -c -m -o md-page.js showdown.js script.js -b beautify=false,ascii_only=true
