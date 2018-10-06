@@ -10,7 +10,7 @@
 3. Write some [markdown](https://guides.github.com/features/mastering-markdown/)
 ```
 <!-- my-page.html --> 
-<script src="https://cdn.rawgit.com/oscarmorrison/simplest-site/c37e80b3/simplest-site.js"></script>
+<script src="https://cdn.rawgit.com/oscarmorrison/md-page/0a88a30a/md-page.js"></script>
 
 # Header
 Welcome to my simplest site
