@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function() {
     document.head.appendChild(sheet);
 
 
-    //handle github wrapping in pre
     var markdown = document.querySelector('noscript').innerText
 
     var converter = new showdown.Converter({
