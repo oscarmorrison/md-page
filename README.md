@@ -15,7 +15,7 @@
 3. Write some [markdown](https://guides.github.com/features/mastering-markdown/)
 ```
 <!-- my-page.html --> 
-<script src="https://cdn.rawgit.com/oscarmorrison/md-page/98d45dd1/md-page.js"></script>
+<script src="https://cdn.rawgit.com/oscarmorrison/md-page/c72eb9e9/md-page.js"></script><noscript>
 
 # Header
 Welcome to my simplest site
