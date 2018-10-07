@@ -30,6 +30,6 @@ Welcome to my simplest site
 ### Demo
 https://oscarmorrison.com/md-page/
 
-<img width="800" alt="side-by-side" src="https://user-images.githubusercontent.com/1651212/46581080-1cefcb00-ca7d-11e8-8a4f-828dbe945dc6.png">
+<img alt="side-by-side" src="https://user-images.githubusercontent.com/1651212/46581080-1cefcb00-ca7d-11e8-8a4f-828dbe945dc6.png">
 
 
