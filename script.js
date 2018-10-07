@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     //handle github wrapping in pre
-    var markdown = document.body.childElementCount == 1 ? document.body.firstElementChild.textContent : document.body.textContent;
+    var markdown = document.querySelector('noscript').innerText
 
     var converter = new showdown.Converter({
         emoji: true,
