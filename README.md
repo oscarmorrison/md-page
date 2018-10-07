@@ -5,7 +5,7 @@
 
 # markdown page
 
-**Create a webpage by just writing markdown, nothing else!**
+**Create a webpage with just markdown (and one js script)!**
 
 ### Installation 
 
@@ -25,9 +25,10 @@ Welcome to my simplest site
 - list
 ```
 
+(see the [wiki](https://github.com/oscarmorrison/md-page/wiki) for more info)
 
 ### Demo
-http://oscarmorrison.com/md-page/
+https://oscarmorrison.com/md-page/
 
 <img width="800" alt="sidebyside 2" src="https://user-images.githubusercontent.com/1651212/46540086-ac6d7080-c8fb-11e8-81fe-491898484d53.png">
 
