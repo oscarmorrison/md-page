@@ -5,7 +5,7 @@
 
 # markdown page
 
-**Create a webpage with just markdown (and one js script)!**
+**Create a webpage with just markdown!**
 
 ### Installation 
 
