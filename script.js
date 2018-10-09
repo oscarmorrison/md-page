@@ -38,6 +38,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var html = converter.makeHtml(markdown);
     document.body.innerHTML = html
+    var meta = document.createElement('meta');
+    meta.setAttribute('charset',"UTF-8");
+    document.getElementsByTagName('head')[0].appendChild(meta);
     document.title = document.title || document.body.firstElementChild.innerText.trim()
 
     //handle hash linking
