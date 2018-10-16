@@ -45,11 +45,6 @@ document.addEventListener("DOMContentLoaded", function() {
     document.body.innerHTML = html
     document.title = document.title || document.body.firstElementChild.innerText.trim()
 
-    var viewportMeta = document.createElement('meta');
-    viewportMeta.name = "viewport";
-    viewportMeta.content = "width=device-width, initial-scale=1, shrink-to-fit=no";
-    document.getElementsByTagName('head')[0].appendChild(viewportMeta);
-
     //handle hash linking
     setTimeout(function() {
         var hash = window.location.hash
