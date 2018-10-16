@@ -10,13 +10,17 @@ document.addEventListener("DOMContentLoaded", function() {
     styles += 'table { border-collapse: collapse; } '
     styles += 'td, th {  border: 1px solid #ddd; padding: 10px 13px; } '
     sheet.innerHTML = styles
-    document.head.appendChild(sheet);
+    document.head.appendChild(sheet)
 
     //viewport
-    var viewportMeta = document.createElement('meta');
-    viewportMeta.name = "viewport";
-    viewportMeta.content = "width=device-width, initial-scale=1, shrink-to-fit=no";
-    document.getElementsByTagName('head')[0].appendChild(viewportMeta);
+    var viewportMeta = document.createElement('meta')
+    viewportMeta.setAttribute('name', 'viewport')
+    viewportMeta.setAttribute('content', 'width=device-width, initial-scale=1, shrink-to-fit=no')
+    document.getElementsByTagName('head')[0].appendChild(viewportMeta)
+
+    var meta = document.createElement('meta')
+    meta.setAttribute('charset', 'UTF-8')
+    document.getElementsByTagName('head')[0].appendChild(meta)
 
     var markdown = document.querySelector('noscript').innerText
 
@@ -41,11 +45,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 'externalLink')
 
 
-    var html = converter.makeHtml(markdown);
+    var html = converter.makeHtml(markdown)
     document.body.innerHTML = html
-    var meta = document.createElement('meta');
-    meta.setAttribute('charset',"UTF-8");
-    document.getElementsByTagName('head')[0].appendChild(meta);
     document.title = document.title || document.body.firstElementChild.innerText.trim()
 
     //handle hash linking
