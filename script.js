@@ -12,6 +12,11 @@ document.addEventListener("DOMContentLoaded", function() {
     sheet.innerHTML = styles
     document.head.appendChild(sheet);
 
+    //viewport
+    var viewportMeta = document.createElement('meta');
+    viewportMeta.name = "viewport";
+    viewportMeta.content = "width=device-width, initial-scale=1, shrink-to-fit=no";
+    document.getElementsByTagName('head')[0].appendChild(viewportMeta);
 
     var markdown = document.querySelector('noscript').innerText
 
@@ -39,11 +44,6 @@ document.addEventListener("DOMContentLoaded", function() {
     var html = converter.makeHtml(markdown);
     document.body.innerHTML = html
     document.title = document.title || document.body.firstElementChild.innerText.trim()
-
-    var viewportMeta = document.createElement('meta');
-    viewportMeta.name = "viewport";
-    viewportMeta.content = "width=device-width, initial-scale=1, shrink-to-fit=no";
-    document.getElementsByTagName('head')[0].appendChild(viewportMeta);
 
     //handle hash linking
     setTimeout(function() {
