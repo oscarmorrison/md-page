@@ -25,7 +25,7 @@ Welcome to my simplest site
 - list
 ```
 
-(see the [wiki](https://github.com/oscarmorrison/md-page/tree/master/docs) for more info)
+(see the [docs](https://github.com/oscarmorrison/md-page/tree/master/docs) for more info)
 
 ### Demo
 https://oscarmorrison.com/md-page/
