@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-    //styles
+    // Styles
     var sheet = document.createElement('style')
     var styles = 'body { padding: 20; font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;} '
     styles += 'blockquote { padding: 0 1em; color: #6a737d; border-left: 0.25em solid #dfe2e5;} '
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
     sheet.innerHTML = styles
     document.head.appendChild(sheet)
 
-    //viewport
+    // Viewport
     var viewportMeta = document.createElement('meta')
     viewportMeta.setAttribute('name', 'viewport')
     viewportMeta.setAttribute('content', 'width=device-width, initial-scale=1, shrink-to-fit=no')
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
     converter.addExtension(function () {
         return [{
             type: 'output',
-            regex: /<a\shref.+">/g,
+            regex: /<a\shref[^>]+>/g,
             replace : function (text) {
                 var url = text.match(/"(.*?)"/)[1]
                 if(url.includes(window.location.hostname) || url[0] == '/' || url[0] == '.' || url[0] == '#'){
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.body.innerHTML = html
     document.title = document.title || document.body.firstElementChild.innerText.trim()
 
-    //handle hash linking
+    // Handle hash linking
     setTimeout(function() {
         var hash = window.location.hash
         window.location.hash = ''
