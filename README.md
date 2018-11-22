@@ -20,7 +20,7 @@
 # Header
 Welcome to my simplest site
 
-- A
+- An
 - awesome
 - list
 ```
