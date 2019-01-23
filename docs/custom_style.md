@@ -4,7 +4,7 @@ You may want to include your own style to the web page by linking to an external
 
 You can create a `.css` file and then include the layout of your preference. To change the style of the web page add a `<link>` tag to the top of the page to link the external resource.
 
-##### Using custom CSS
+#### Using custom CSS 
 ---
 ```
 <link href="custom.css" rel="stylesheet"></link>
@@ -31,7 +31,7 @@ Welcome to md-page, the easiest way to make a webpage from just markdown...
  
 Thanks for stopping by!
 ```
-##### Example of custom.css
+#### Example of custom.css
 ---
 
 ```

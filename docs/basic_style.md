@@ -2,7 +2,7 @@
 
 This adds some inline style to the header and applies basic style to the `<body>` and each of the markdown features. Mainly just changes the font family, and the minimal amount of styles for each of the markdown features.
 
-##### CSS properties written for the document's body
+#### CSS properties written for the document's body
 ---
 ```
 body { 
@@ -11,7 +11,7 @@ body {
 } 
 ```
 
-##### CSS properties written for the differents markdown features
+#### CSS properties written for the differents markdown features
 ---
 ```
 blockquote { 
