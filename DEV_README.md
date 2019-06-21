@@ -1,4 +1,9 @@
+Install dependencies (this is just uglify)
 ```
-npm install uglify-js -g
-make
+make install
+```
+
+Concat / minimize script file
+```
+make concat
 ```
