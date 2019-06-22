@@ -10,17 +10,17 @@ document.addEventListener("DOMContentLoaded", function() {
     styles += 'table { border-collapse: collapse; } '
     styles += 'td, th {  border: 1px solid #ddd; padding: 10px 13px; } '
     sheet.innerHTML = styles
-    document.head.appendChild(sheet)
+    document.head.prepend(sheet)
 
     // Viewport
     var viewportMeta = document.createElement('meta')
     viewportMeta.setAttribute('name', 'viewport')
     viewportMeta.setAttribute('content', 'width=device-width, initial-scale=1, shrink-to-fit=no')
-    document.getElementsByTagName('head')[0].appendChild(viewportMeta)
+    document.head.appendChild(viewportMeta)
 
     var meta = document.createElement('meta')
     meta.setAttribute('charset', 'UTF-8')
-    document.getElementsByTagName('head')[0].appendChild(meta)
+    document.head.appendChild(meta)
 
     var markdown = document.querySelector('noscript').innerText
 
