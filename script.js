@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Styles
     var sheet = document.createElement('style')
-    var styles = 'body { padding: 20; font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;} '
+    var styles = 'body { padding: 20px; font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;} '
     styles += 'blockquote { padding: 0 1em; color: #6a737d; border-left: 0.25em solid #dfe2e5;} '
     styles += 'code { padding: 0.2em 0.4em; background: rgba(27,31,35,0.05); border-radius: 3px;} '
     styles += 'pre > code { background: none } '
