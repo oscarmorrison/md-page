@@ -50,3 +50,9 @@ https://github.com/showdownjs/showdown
 
 ## List of supported emojis
 https://github.com/showdownjs/showdown/wiki/Emojis
+
+
+# More docs
+- [Basic style](https://github.com/oscarmorrison/md-page/blob/master/docs/basic_style.md)
+- [Custom style](https://github.com/oscarmorrison/md-page/blob/master/docs/custom_style.md)
+- [Custom title](https://github.com/oscarmorrison/md-page/blob/master/docs/custom_title.md)
