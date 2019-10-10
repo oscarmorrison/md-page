@@ -1,5 +1,7 @@
 # DEV_README
 
+Checkout from `review` branch. `master` is considered production branch and should not be touched.
+
 - source files are in `/src`
 - test files are in `/test`
 - `index.html` can be used to check your changes, but feel free to create your own `.html` files
