@@ -29,8 +29,6 @@ jobs:
       env:
         CI: true
     - name: release staging
-      env:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
