@@ -1,0 +1,30 @@
+name: automated test
+
+# Trigger whenever PR activity happens on review branch
+on:
+  pull_request:
+    branches:
+      - review
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x]
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: npm install, test, and build
+      run: |
+        npm install
+        npm test
+        npm run build
+      env:
+        CI: true

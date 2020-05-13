@@ -1,0 +1,31 @@
+{
+  "name": "md-page",
+  "author": "oscarmorrison",
+  "version": "1.0.0",
+  "description": "create a webpage with just markdown",
+  "homepage": "https://github.com/oscarmorrison/md-page.git#readme",
+  "bugs": {
+    "url": "https://github.com/oscarmorrison/md-page.git/issues"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "uglify-js": "^3.6.1"
+  },
+  "files": [
+    "src/*"
+  ],
+  "directories": {
+    "doc": "docs",
+    "src": "src",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest test",
+    "build": "uglifyjs -c -m -o md-page.js src/showdown.js src/script.js -b beautify=false,ascii_only=true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscarmorrison/md-page.git"
+  },
+  "license": "MIT"
+}

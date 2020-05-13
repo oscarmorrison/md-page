@@ -1,0 +1,46 @@
+name: automated release
+
+# Trigger whenever branch receives new commit (from merging or push)
+on:
+  push:
+    branches:
+      - review
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x]
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: npm install, test, and build
+      run: |
+        npm install
+        npm test
+        npm run build
+      env:
+        CI: true
+    - name: release staging
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git clean -f
+        git branch release-stage
+        git checkout release-stage
+        git merge origin/review
+        npm run build
+        git add .
+        git commit -m "Built on `date +'%Y-%m-%d %H:%M:%S'`"
+    - name: release
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        force: true
