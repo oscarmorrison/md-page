@@ -9,7 +9,7 @@ You can manually set a page title using the HTML (`<title> `) tag to define the 
 3. Write some markdown including the `<title>` tag
 
 ```
-<script src="https://rawcdn.githack.com/oscarmorrison/md-page/master/md-page.js"></script><noscript>
+<script src="https://rawcdn.githack.com/oscarmorrison/md-page/master/md-page.js"></script><pre id="md-page-markdown-text">
 
 <title>Hello World</title>
 

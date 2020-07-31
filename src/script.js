@@ -64,14 +64,14 @@ document.addEventListener("DOMContentLoaded", function() {
     var isIE = window.navigator.userAgent.indexOf("MSIE ")
     if (isIE) {
         // https://stackoverflow.com/questions/656605/jquery-text-call-preserves-newlines-in-firefox-but-not-in-ie
-        var cloned = document.querySelector('noscript')
+        var cloned = document.querySelector('noscript, #md-page-markdown-text')
         var pre = document.createElement("pre") // IE11 will preserve formatting from pre or textarea
         pre.appendChild(cloned)
         var markdown = pre.textContent ? pre.textContent: pre.innerText;
         delete cloned
         delete pre
     } else {
-        var markdown = document.querySelector('noscript').innerText
+        var markdown = document.querySelector('noscript, #md-page-markdown-text').innerText
     }
 
     var converter = new showdown.Converter({

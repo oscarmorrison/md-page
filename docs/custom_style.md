@@ -8,7 +8,7 @@ You can create a `.css` file and then include the layout of your preference. To 
 ---
 ```
 <link href="custom.css" rel="stylesheet"></link>
-<script src="https://rawcdn.githack.com/oscarmorrison/md-page/master/md-page.js"></script><noscript>
+<script src="https://rawcdn.githack.com/oscarmorrison/md-page/master/md-page.js"></script><pre id="md-page-markdown-text">
 
 # Header
 Welcome to md-page, the easiest way to make a webpage from just markdown...
