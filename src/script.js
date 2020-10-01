@@ -39,8 +39,8 @@ if (!String.prototype.includes) {
 document.addEventListener("DOMContentLoaded", function() {
 
     // Styles
-    const sheet = document.createElement('style')
-    const styles = 
+    var sheet = document.createElement('style')
+    var styles = 
     `
     body { padding: 20px; font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;}
     blockquote { padding: 0 1em; color: #6a737d; border-left: 0.25em solid #dfe2e5;}
