@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "jest": "^24.9.0",
-    "uglify-js": "^3.6.1"
+    "uglify-es": "^3.11.0"
   },
   "files": [
     "src/*"
