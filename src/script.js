@@ -39,14 +39,17 @@ if (!String.prototype.includes) {
 document.addEventListener("DOMContentLoaded", function() {
 
     // Styles
-    var sheet = document.createElement('style')
-    var styles = 'body { padding: 20px; font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;} '
-    styles += 'blockquote { padding: 0 1em; color: #6a737d; border-left: 0.25em solid #dfe2e5;} '
-    styles += 'code { padding: 0.2em 0.4em; background: rgba(27,31,35,0.05); border-radius: 3px;} '
-    styles += 'pre > code { background: none } '
-    styles += 'pre { padding: 16px; overflow: auto; line-height: 1.45; background-color: #f6f8fa; border-radius: 3px; } '
-    styles += 'table { border-collapse: collapse; } '
-    styles += 'td, th {  border: 1px solid #ddd; padding: 10px 13px; } '
+    const sheet = document.createElement('style')
+    const styles = 
+    `
+    body { padding: 20px; font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;}
+    blockquote { padding: 0 1em; color: #6a737d; border-left: 0.25em solid #dfe2e5;}
+    code { padding: 0.2em 0.4em; background: rgba(27,31,35,0.05); border-radius: 3px;}
+    pre > code { background: none }
+    pre { padding: 16px; overflow: auto; line-height: 1.45; background-color: #f6f8fa; border-radius: 3px; }
+    table { border-collapse: collapse; }
+    td, th {  border: 1px solid #ddd; padding: 10px 13px; }
+    `;
     sheet.innerHTML = styles
     document.head.prepend(sheet)
 
