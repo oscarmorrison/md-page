@@ -11,7 +11,7 @@ body {
 } 
 ```
 
-#### CSS properties written for the differents markdown features
+#### CSS properties written for the different markdown features
 ---
 ```
 blockquote { 
