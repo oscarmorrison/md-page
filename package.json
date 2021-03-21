@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "jest": "^24.9.0",
+    "jsdom": "^16.4.0",
     "uglify-js": "^3.6.1"
   },
   "files": [
@@ -20,7 +21,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "jest test",
+    "test": "jest --watchAll",
     "build": "uglifyjs -c -m -o md-page.js src/showdown.js src/script.js -b beautify=false,ascii_only=true"
   },
   "repository": {

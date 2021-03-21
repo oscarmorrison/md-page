@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HTML Rendering Tests: Ensures Blockquotes are rendered accurately It should render a single blockquote 1`] = `
+"<blockquote>
+  <p>This should be a blockquote</p>
+</blockquote>"
+`;
+
+exports[`HTML Rendering Tests: Ensures Blockquotes are rendered accurately It should render multiple-line blockquotes 1`] = `
+"<blockquote>
+  <p>Line 1<br>
+  Line 2<br>
+  Line 3</p>
+</blockquote>"
+`;
+
+exports[`HTML Rendering Tests: Ensures Emphasis syntax renders accurately  It should render **text** as bold 1`] = `"<p><strong>This text will be bold</strong></p>"`;
+
+exports[`HTML Rendering Tests: Ensures Emphasis syntax renders accurately  It should render *text* as italics 1`] = `"<p><em>This text will be italic</em></p>"`;
+
+exports[`HTML Rendering Tests: Ensures Emphasis syntax renders accurately  It should render __text__ as underlined 1`] = `"<p><u>This text will be underlined</u></p>"`;
+
+exports[`HTML Rendering Tests: Ensures Emphasis syntax renders accurately  It should render _text_ as italics 1`] = `"<p>_This text will not be italic_</p>"`;
+
+exports[`HTML Rendering Tests: Ensures Emphasis syntax renders accurately  It should render a combined bold and italics string __text **text**__ 1`] = `"<p>_You <strong>can</strong> combine them_</p>"`;
+
+exports[`HTML Rendering Tests: Ensures Images and Links are rendered accurately It should render images 1`] = `"<p><img src=\\"https://media0.giphy.com/media/111ebonMs90YLu/giphy.gif\\" alt=\\"TestPassed\\"></p>"`;
+
+exports[`HTML Rendering Tests: Ensures Images and Links are rendered accurately It should render links 1`] = `"<p><a href=\\"https://github.com/oscarmorrison/md-page\\">md-page</a></p>"`;
+
+exports[`HTML Rendering Tests: Ensures Lists syntax renders accurately It should render unordered lists of a single item 1`] = `
+"<ul>
+<li>Item 1</li>
+</ul>"
+`;
+
+exports[`HTML Rendering Tests: Ensures Lists syntax renders accurately It should render unordered lists of multiple items 1`] = `
+"<ul>
+<li>Item 1<ul>
+<li>Item 2</li>
+<li>Item 3</li></ul></li>
+</ul>"
+`;
+
+exports[`HTML Rendering Tests: Ensures Lists syntax renders accurately It should render unordered lists of multiple items with indented items 1`] = `
+"<ul>
+<li>Item 1<ul>
+<li>Item 2</li>
+<li>Item 3 <ul>
+<li>Item 4</li>
+<li>Item 5</li></ul></li></ul></li>
+</ul>"
+`;
+
+exports[`HTML Rendering Tests: Ensures header syntax renders accurately. It should render # as <h1> 1`] = `"<h1 id=\\"header\\">header</h1>"`;
+
+exports[`HTML Rendering Tests: Ensures header syntax renders accurately. It should render ## as <h2> 1`] = `"<h2 id=\\"header\\">header</h2>"`;
+
+exports[`HTML Rendering Tests: Ensures header syntax renders accurately. It should render ### as <h3> 1`] = `"<h3 id=\\"header\\">header</h3>"`;
+
+exports[`HTML Rendering Tests: Ensures header syntax renders accurately. It should render #### as <h4> 1`] = `"<h4 id=\\"header\\">header</h4>"`;
+
+exports[`HTML Rendering Tests: Ensures header syntax renders accurately. It should render ##### as <h5> 1`] = `"<h5 id=\\"header\\">header</h5>"`;
+
+exports[`HTML Rendering Tests: Ensures header syntax renders accurately. It should render ###### as <h6> 1`] = `"<h6 id=\\"header\\">header</h6>"`;
