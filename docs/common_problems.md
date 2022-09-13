@@ -23,6 +23,7 @@ Welcome to my simplest site
 - An
 - awesome
 - list
+</noscript>
 </body>
 </html>
 ``
