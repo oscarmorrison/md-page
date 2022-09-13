@@ -54,3 +54,4 @@ https://github.com/showdownjs/showdown/wiki/Emojis
 - [Basic style](https://github.com/oscarmorrison/md-page/blob/master/docs/basic_style.md)
 - [Custom style](https://github.com/oscarmorrison/md-page/blob/master/docs/custom_style.md)
 - [Custom title](https://github.com/oscarmorrison/md-page/blob/master/docs/custom_title.md)
+- [Common problems](https://github.com/oscarmorrison/md-page/blob/master/docs/common_problems.md)
