@@ -1,5 +1,5 @@
 const { JSDOM } = require('jsdom');
-const baseHtml = '<script src="file://./md-page.js"></script><noscript>'
+const baseHtml = `<script src="file://${__dirname}/../md-page.js"></script><noscript>`
 const options = { resources: 'usable', runScripts: 'dangerously' };
 
 describe("HTML Rendering Tests: Ensures header syntax renders accurately.", () => {

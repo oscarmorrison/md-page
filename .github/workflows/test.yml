@@ -5,6 +5,7 @@ on:
   pull_request:
     branches:
       - review
+  workflow_dispatch:
 
 jobs:
   build:
@@ -21,10 +22,15 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: npm install, test, and build
-      run: |
-        npm install
-        npm test
-        npm run build
+    - name: install
+      run: npm install
+      env:
+        CI: true
+    - name: build
+      run: npm run build
+      env:
+        CI: true
+    - name: test
+      run: npm run test-ci
       env:
         CI: true

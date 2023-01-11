@@ -22,6 +22,7 @@
   },
   "scripts": {
     "test": "jest --watchAll",
+    "test-ci": "jest",
     "build": "uglifyjs -c -m -o md-page.js src/showdown.js src/script.js -b beautify=false,ascii_only=true"
   },
   "repository": {

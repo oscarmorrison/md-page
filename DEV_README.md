@@ -11,17 +11,19 @@ Checkout from `review` branch. `master` is considered production branch and shou
 $ npm install
 ```
 
-## Run Tests
-```
-$ npm test
-```
-
 ## Build
 builds `md-page.js` at project root.
 
 (DO NOT SUBMIT THE BUILT FILE, REMOVE IT BEFORE OPENING PR)
 ```
 $ npm run build
+```
+
+## Run Tests
+At the moment, tests focus only on the build artifact. Thus, run `npm run build` before running any test.
+
+```
+$ npm test
 ```
 
 ## Opening PR
